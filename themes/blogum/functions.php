@@ -2,6 +2,7 @@
 
 add_theme_support('automatic-feed-links'); // Add default posts and comments RSS feed links to head
 
+add_theme_support( 'custom-header' );
 /*** Top navigation ***/
 
 function register_menu() {
