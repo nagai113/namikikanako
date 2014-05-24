@@ -33,8 +33,7 @@
 	<body>
         <div class="wrapper">
             <div class="header clear">
-                <h1><a href="<?php bloginfo('home'); ?>">&mdash; <?php bloginfo('name'); ?></a></h1>
-
+                        <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
                 <?php wp_nav_menu(array('menu' => 'Header', 'theme_location' => 'Header', 'depth' => 1, 'container_class' => 'menu')); ?>
 
                 <?php get_search_form(); ?>
