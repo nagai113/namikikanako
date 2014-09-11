@@ -6,12 +6,7 @@
     <?php while ( have_posts() ) : the_post(); ?>
 
         <div <?php post_class('clear'); ?> id="post_<?php the_ID(); ?>">
-            <div class="post_meta">
-                <div class="post_data">
-                    <h2><?php the_title(); ?></h2>
-                </div>
-            </div>
-            <div class="post_content">
+            <div class="post_topcontent">
                 <?php the_content(); ?>
                 <div class="post_tags clear">
                     <?php
